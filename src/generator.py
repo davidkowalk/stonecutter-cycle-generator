@@ -1,6 +1,7 @@
 def gen_contents(ids: list):
 
     recipes = list()
+    pairs = list()
     json = """
     {{
         "type": "minecraft:stonecutting",
@@ -20,5 +21,6 @@ def gen_contents(ids: list):
                 continue
 
             recipes.append(json.format(src = source_item, dest = dest_item))
+            pairs.append((source_item.replace("minecraft:",""), dest_item.replace("minecraft:","")))
 
-    return recipes
+    return recipes, pairs
