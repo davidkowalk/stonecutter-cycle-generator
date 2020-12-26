@@ -3,7 +3,7 @@ import generator
 
 def help():
     print("""
-Format: python interface.py <Destination Folder> [<id1> <id2> <id2>...]
+Format: python interface.py <Destination Folder> [<id1> <id2> <id3>...]
     """)
 
 def main():
